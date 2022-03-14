@@ -1,0 +1,28 @@
+.slick-dots {
+  padding-left: 45% !important;
+}
+
+.slick-dots > li {
+  width: 3.6rem !important;
+  height: 1.6rem !important;
+}
+
+.slick-dots > li > button {
+  cursor: pointer !important;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 1rem !important;
+  background-image: url("/images/btn.png") !important;
+  background-size: 100% 100% !important;
+  background-color: #333333 !important;
+}
+
+.slick-dots > li.slick-active button {
+  background-image: url("/images/btn_active.png") !important;
+}
+
+@screen <md {
+  .slick-dots {
+    padding-left: 45% !important;
+  }
+}

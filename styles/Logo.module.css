@@ -1,0 +1,29 @@
+.logo_white {
+  @apply w-48 h-12.8;
+
+  background-image: url("/images/logo_black.png");
+}
+
+.logo_black {
+  @apply w-48 h-12.8;
+
+  background-image: url("/images/logo_white.png");
+}
+
+.logoWrapper {
+  @apply absolute left-38;
+
+  cursor: pointer;
+}
+
+@screen <xl {
+  .logoWrapper {
+    left: 3.2rem;
+  }
+}
+
+@screen <sm {
+  .logoWrapper {
+    left: 1.8rem;
+  }
+}

@@ -1,0 +1,64 @@
+.commonTitle {
+  @apply relative flex h-30 flex-col justify-around items-center z-2 mt-34;
+}
+
+.common_title_text {
+  @apply h-9.6 font-normal;
+
+  font-size: 2.4rem;
+  color: #ffffff;
+  line-height: 2.4rem;
+}
+
+.common_title_text_blue {
+  @apply h-9.6 font-normal;
+
+  font-size: 2.4rem;
+  color: #004da1;
+  line-height: 2.4rem;
+}
+
+/* 单行文本溢出打点 */
+.one_text_overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 俩行文本溢出隐藏打点 */
+.two_text_overflow {
+  display: -webkit-box;
+  overflow: hidden; /* 溢出隐藏 */
+  text-overflow: ellipsis; /* 以省略号...显示 */
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.btn_bg {
+  width: 8rem;
+  height: 3.2rem;
+  cursor: pointer;
+  opacity: 0.7;
+  background-image: url("/images/more.png");
+}
+
+.btn_bg:hover {
+  opacity: 1;
+}
+
+/* 面包屑道行样式 */
+.bread {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+  line-height: 16px;
+}
+
+.bread_a {
+  color: #666666;
+  cursor: pointer;
+}
+
+.imgWrapper {
+  width: 100%;
+}

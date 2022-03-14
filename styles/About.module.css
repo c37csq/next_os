@@ -1,0 +1,64 @@
+.aboutDiv {
+  @apply w-full;
+
+  background: #ffffff;
+}
+
+.aboutContainer {
+  @apply relative w-full h-full flex justify-center items-center;
+}
+
+.aboutContent {
+  @apply z-3 w-480;
+}
+
+.about_title_bg {
+  position: absolute;
+  top: -1.8rem;
+  z-index: 0;
+  z-index: -10;
+  width: 23rem;
+  height: 5rem;
+  background-image: url("/images/aboutUs.png");
+}
+
+.content {
+  margin-top: 5rem;
+  margin-bottom: 12rem;
+  width: 100%;
+  text-indent: 2em;
+}
+
+.content_item {
+  font-size: 1.4rem;
+  color: #828282;
+  line-height: 3.3rem;
+}
+
+.about_content_bg {
+  position: absolute;
+  z-index: 0;
+  width: 84.3rem;
+  height: 11.1rem;
+  background-image: url("/images/aboutus_bg.png");
+}
+
+.right {
+  top: 16rem;
+  right: 0;
+}
+
+.left {
+  bottom: 10rem;
+  left: 0;
+}
+
+@screen <xl {
+  .about_content_bg {
+    display: none;
+  }
+
+  .aboutContent {
+    padding: 0 2.5rem;
+  }
+}

@@ -1,0 +1,10 @@
+package.json
+/build
+/public
+.gitignore
+.prettierignore
+.next
+.vscode
+.git
+/out
+/out.zip

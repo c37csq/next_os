@@ -1,0 +1,33 @@
+.footer {
+  @apply w-full h-full;
+
+  background-color: #000204;
+}
+
+.footerContainer {
+  @apply w-full h-full flex justify-center items-center;
+}
+
+.footerContent {
+  @apply h-70 w-248 text-#3995D4 flex flex-col justify-around items-center;
+}
+
+@screen <sm {
+  .footerContent {
+    @apply h-56 w-full pb-6 pl-8 pr-8;
+  }
+}
+
+.copyright {
+  @apply text-#3995D4 font-normal text-center;
+
+  line-height: 2.2rem;
+  font-size: 1.6rem;
+}
+
+.copy_msg {
+  @apply w-full font-normal text-#3995D4 flex justify-center items-center;
+
+  line-height: 2.1rem;
+  font-size: 1.4rem;
+}

@@ -1,0 +1,89 @@
+.header {
+  @apply flex justify-center items-center;
+
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 6.4rem;
+}
+
+.header.header_active {
+  background: #ffffff;
+}
+
+.header_content {
+  @apply w-500 relative flex items-center h-full;
+}
+
+.header_menu_wrapper {
+  width: 85rem;
+  height: 100%;
+}
+
+.header_menu_item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+  color: #ffffff;
+  cursor: pointer;
+  line-height: 16px;
+}
+
+.header_active .header_menu_item {
+  color: #000000;
+}
+
+.active {
+  position: relative;
+  color: #008eff !important;
+}
+
+.header_menu_item.active::after {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  margin: auto;
+  width: 26px;
+  height: 15px;
+  content: "";
+  background-image: url("/images/arrow.png");
+  transform: rotate(180deg);
+}
+
+.header_menu_wrapper {
+  @apply h-full w-340 absolute right-50 flex items-center justify-end;
+}
+
+.header_menu {
+  @apply w-280 h-full flex items-center justify-around;
+}
+
+.header_icon {
+  @apply absolute right-10 cursor-pointer hidden;
+}
+
+@screen <xl {
+  .header_content {
+    width: 100%;
+  }
+
+  .header_menu_wrapper {
+    right: 0;
+    justify-content: center;
+  }
+}
+
+@screen <lg {
+  .header_menu_wrapper {
+    display: none;
+  }
+
+  .header_icon {
+    display: inline-block;
+  }
+}

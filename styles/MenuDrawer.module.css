@@ -1,0 +1,16 @@
+.menu_drawer_item {
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.noActive .menu_drawer_item {
+  color: #ffffff;
+}
+
+.active .menu_drawer_item {
+  color: #000000;
+}
+
+.active_item {
+  color: #1890ff !important;
+}

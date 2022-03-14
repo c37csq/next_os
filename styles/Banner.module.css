@@ -1,0 +1,79 @@
+.indexDiv {
+  @apply w-full min-h-screen;
+}
+
+.carousel_item {
+  @apply flex relative justify-center items-center min-w-screen min-h-screen;
+
+  background-color: #000000;
+}
+
+.logo {
+  @apply absolute top-1/2 left-1/2;
+
+  transform: translate(-50%, -50%);
+  width: 60rem;
+}
+
+.banner2_logos {
+  position: absolute;
+  top: 50%;
+  left: 24rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -12rem;
+  width: 64rem;
+  height: 24rem;
+  transition: none;
+  flex-direction: column;
+  transform: translateY(100vh);
+  transition-timing-function: ease-out;
+}
+
+.video {
+  width: 100%;
+}
+
+@screen <xl {
+  .banner2_logos {
+    left: 8rem;
+  }
+}
+
+.active {
+  transition: 1.5s;
+  transform: translate(0%) !important;
+}
+
+.banner2_logo1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 9.3rem;
+}
+
+@screen <md {
+  .banner2_logos {
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, 100vh) !important;
+  }
+
+  .logo {
+    width: 90%;
+  }
+
+  .active {
+    transition: 1.5s;
+    transform: translate(-50%, 0%) !important;
+  }
+}
+
+.banner2_logo2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 9.3rem;
+}

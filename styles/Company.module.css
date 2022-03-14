@@ -1,0 +1,83 @@
+.companyDiv {
+  width: 100%;
+  background: #ffffff;
+}
+
+.companyContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.company_item {
+  margin: 20px 0;
+  width: 241px;
+  height: 110px;
+  border: 1px solid #ffffff;
+  border-radius: 14px;
+}
+
+.companyContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 120rem;
+  flex-direction: column;
+}
+
+.content {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+  margin-bottom: 8rem;
+}
+
+.company_bg_title {
+  position: absolute;
+  top: -12px;
+  z-index: -10;
+  width: 44.7rem;
+  height: 3.4rem;
+  background-repeat: no-repeat;
+  background-image: url("/images/partner_company.png");
+}
+
+@screen <xl {
+  .content {
+    justify-content: space-between;
+    padding: 0 3rem;
+  }
+
+  .company_item {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+}
+
+@screen <lg {
+  .content {
+    justify-content: space-around;
+  }
+}
+
+@screen <md {
+  .company_item {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .company_bg_title {
+    @apply w-screen;
+  }
+}

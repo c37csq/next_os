@@ -1,0 +1,161 @@
+.newsDiv {
+  width: 100%;
+  background: #f4f4f4;
+}
+
+.newsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.newsContent {
+  width: 120rem;
+}
+
+.news_title_bg {
+  position: absolute;
+  top: -12px;
+  z-index: -10;
+  width: 32rem;
+  height: 3.4rem;
+  background-image: url("/images/newscenter.png");
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  margin-right: 1rem;
+  width: 18rem;
+  height: 16rem;
+}
+
+.left img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.right {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 38.2rem;
+  height: 16rem;
+  flex-direction: column;
+}
+
+.news_title {
+  position: relative;
+  width: 38.2rem;
+  height: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #3a3a3a;
+  line-height: 15px;
+}
+
+.title_style {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  border-radius: 2px;
+  background: #0d56ae;
+}
+
+.news_msg {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777776;
+  line-height: 24px;
+}
+
+.news_title_bg {
+  position: absolute;
+  top: -12px;
+  z-index: -10;
+  width: 320px;
+  height: 34px;
+  background-image: url("/images/newscenter.png");
+}
+
+@screen <xl {
+  .newsContent {
+    padding: 0 3rem;
+    width: 100%;
+  }
+
+  .right {
+    width: 50%;
+  }
+
+  .news_title {
+    width: 100%;
+  }
+}
+
+@screen <lg {
+  .newsContent {
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  .content {
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 4rem;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .items {
+    margin: 3rem 0;
+    width: 100%;
+  }
+
+  .right {
+    width: 70%;
+  }
+
+  .news_title {
+    width: 100%;
+  }
+}
+
+@screen <sm {
+  .newsContent {
+    padding: 0 3rem;
+    width: 100%;
+  }
+
+  .items {
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 3rem;
+    flex-direction: column;
+  }
+
+  .right {
+    margin-top: 4rem;
+    width: 100%;
+  }
+}

@@ -1,0 +1,94 @@
+.touchDiv {
+  @apply w-full;
+
+  background: #000b17;
+}
+
+.touchContainer {
+  @apply w-full h-full flex justify-center items-center;
+}
+
+.touchContent {
+  @apply w-480 flex flex-col items-center;
+}
+
+.touch_title_bg {
+  @apply absolute w-115.2 h-13.6 -z-10 -top-4.8;
+
+  background-image: url("/images/contact_us.png");
+}
+
+.content {
+  @apply flex justify-between items-center;
+
+  margin-top: 14rem;
+  margin-bottom: 14rem;
+  width: 90%;
+  color: #ffffff;
+}
+
+.left_item {
+  @apply flex items-center mt-12 mb-12;
+}
+
+.left_item:nth-of-type(1) > div {
+  display: flex;
+  align-items: center;
+}
+
+.touch_right {
+  @apply h-58 flex flex-col justify-between items-center;
+}
+
+.operate {
+  @apply font-normal text-center;
+
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  color: #ffffff;
+  line-height: 2.1rem;
+}
+
+.desc {
+  @apply font-normal ml-2 mb-0;
+
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+.touch_left {
+  padding-right: 3rem;
+}
+
+@screen <sm {
+  .content {
+    margin: 5rem 0;
+  }
+
+  .left_item:nth-of-type(1) {
+    @apply items-start;
+
+    position: relative;
+  }
+
+  .left_item:nth-of-type(1) > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 0.3rem;
+    width: 1.4rem;
+    height: 1.8rem;
+  }
+
+  .left_item:nth-of-type(1) .desc {
+    margin-left: 2rem;
+  }
+
+  .operate {
+    font-size: 1.2rem;
+  }
+
+  .operate > span {
+    display: block;
+  }
+}
